@@ -38,7 +38,7 @@ services:
     working_dir: /workspace
 
     volumes:
-      - ./citas-api:/workspace
+      - ../citas-api:/workspace
       - maven_cache:/root/.m2
 
     environment:
@@ -72,7 +72,7 @@ services:
     working_dir: /workspace
 
     volumes:
-      - ./citas-web:/workspace
+      - ../citas-web:/workspace
       - node_cache:/root/.npm
 
     ports:
